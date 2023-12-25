@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --purple-400: #b52184;
+  --blue-700: #312d64;
+  --white-200: #f9f4fb;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 500rem;
+}
+
+body,
+input {
+  font-family: Mulish;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--white-200);
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  margin: 0 3.2rem;
+  width: 36.4rem;
+  height: 37rem;
+}
+
+header h1 {
+  color: var(--purple-400);
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+header p {
+  color: var(--blue-700);
+
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-bottom: 3.5rem;
+}
+
+.arrow-down-icon {
+  width: 5.8rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.arrow-down-icon:hover {
+  width: 6.5rem;
+}
+
+.card-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 5rem;
+
+  padding: 5.2rem 2.5rem;
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+}
+.card {
+  width: 100%;
+  border-radius: 1.9rem;
+  padding: 2.5rem;
+  background: #fff;
+}
+
+.card h2 {
+  margin-top: 3.3rem;
+  margin-bottom: 1.9rem;
+  color: var(--purple-400);
+
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.card p {
+  color: var(--blue-700);
+  font-weight: 600;
+  font-size: 1.6rem;
+
+  width: 26.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 7.8rem 0 7.5rem 0;
+
+  padding: 0 4rem;
+}
+
+form legend {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--purple-400);
+  margin-bottom: 4.3rem;
+}
+
+form input {
+  margin-bottom: 2.4rem;
+
+  border-radius: 16px;
+  border: 1.5px solid var(--blue-700);
+}
+
+form textarea {
+  width: 100%;
+
+  border-radius: 16px;
+  border: 1.5px solid var(--blue-700);
+
+  margin-bottom: 2.4rem;
+
+  height: 12.6rem;
+
+  line-height: 140%;
+  font-weight: 600;
+
+  padding: 12px 16px 16px 16px;
+}
+
+form textarea::placeholder {
+  color: var(--blue-700);
+}
+
+footer {
+  background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
+
+  text-align: center;
+  color: #fff;
+
+  font-size: 1.9rem;
+  font-weight: 600;
+
+  padding: 3.2rem 1.6rem;
+}
