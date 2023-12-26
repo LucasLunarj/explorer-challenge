@@ -256,7 +256,7 @@ footer {
     width: 59.2rem;
   }
   .contact-area textarea {
-    width: 59.2rem;
+    width: 56rem;
   }
   .contact-area header div {
     display: flex;
@@ -267,5 +267,6 @@ footer {
   }
   .star-background {
     display: block;
+    overflow: hidden;
   }
 }
