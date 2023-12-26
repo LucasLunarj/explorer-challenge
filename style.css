@@ -111,8 +111,6 @@ form {
   display: flex;
   flex-direction: column;
   margin: 7.8rem 6.5rem;
-  padding-left: 5.5rem;
-  padding-right: 5.5rem;
 }
 
 form legend {
@@ -121,11 +119,15 @@ form legend {
   color: var(--purple-400);
   margin-bottom: 4.3rem;
 }
-
+.contact-area {
+  width: 100%;
+  margin: auto;
+  border: 1px solid red;
+}
 .contact-area form input {
   margin-bottom: 2.4rem;
 
-  width: 100%;
+  width: 31.6rem;
 
   border-radius: 16px;
   border: 2px solid var(--blue-700);
@@ -154,7 +156,7 @@ form legend {
 }
 
 .contact-area textarea {
-  width: 100%;
+  width: 31.6rem;
 
   border-radius: 16px;
   border: 2px solid var(--blue-700);
@@ -253,7 +255,7 @@ footer {
 
   .contact-area input,
   textarea {
-    width: 59.2rem;
+    min-width: 59.2rem;
   }
   .contact-area textarea {
     width: 56rem;
