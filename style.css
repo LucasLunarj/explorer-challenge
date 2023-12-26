@@ -55,7 +55,7 @@ header p {
   font-size: 2rem;
   font-weight: 600;
 
-  margin-bottom: 3.5rem;
+  margin-bottom: -11rem;
 }
 
 .arrow-down-icon {
@@ -75,6 +75,10 @@ header p {
   align-items: center;
 
   gap: 5rem;
+
+  max-width: 39.6rem;
+
+  margin: auto;
 
   padding: 5.2rem 2.5rem;
   background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
@@ -106,7 +110,9 @@ header p {
 form {
   display: flex;
   flex-direction: column;
-  margin: 7.8rem 0 6.5rem 0;
+  margin: 7.8rem 6.5rem;
+  padding-left: 5.5rem;
+  padding-right: 5.5rem;
 }
 
 form legend {
@@ -116,7 +122,7 @@ form legend {
   margin-bottom: 4.3rem;
 }
 
-form input {
+.contact-area form input {
   margin-bottom: 2.4rem;
 
   width: 100%;
@@ -131,24 +137,23 @@ form input {
   color: var(--blue-700);
 }
 
-form input::placeholder {
+.contact-area form input::placeholder {
   color: var(--blue-700);
 }
 
-form div {
+.contact-area form div {
   height: 4.8rem;
   width: 34.8rem;
   position: relative;
   margin-bottom: 24px;
 }
 
-form div img {
+.contact-area form div img {
   padding: 12px 12px;
   position: absolute;
 }
 
-form textarea {
-  height: 100%;
+.contact-area textarea {
   width: 100%;
 
   border-radius: 16px;
@@ -157,6 +162,7 @@ form textarea {
   margin-bottom: 2.4rem;
 
   height: 12.6rem;
+  width: 31.6rem;
 
   line-height: 140%;
   font-weight: 600;
@@ -168,13 +174,16 @@ form textarea::placeholder {
   font-weight: 600;
   color: var(--blue-700);
 }
-
-.button {
+.star-background {
+  display: none;
+}
+.contact-area .button {
   background: linear-gradient(96deg, #343193 0%, #302c63 99.68%);
 
   color: #fff;
 
   padding: 16px;
+
   width: 15.1rem;
 
   cursor: pointer;
@@ -196,5 +205,67 @@ footer {
   padding: 3.2rem 1.6rem;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .page {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  header img {
+    width: 71.9rem;
+    height: 73.2rem;
+  }
+  header h1 {
+    font-size: 5.8rem;
+    margin-top: 31.2rem;
+  }
+  header p {
+    font-size: 3.2rem;
+  }
+
+  .card-area {
+    padding: 6.4rem 11.1rem;
+    flex-direction: row;
+    max-width: 144rem;
+  }
+
+  .card {
+    width: 36.6rem;
+
+    height: 44.8rem;
+  }
+  .card p {
+    width: 100%;
+    height: 100vh;
+    font-size: 1.93rem;
+  }
+
+  .contact-area {
+    width: 144rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    gap: 9.2rem;
+  }
+
+  .contact-area input,
+  textarea {
+    width: 59.2rem;
+  }
+  .contact-area textarea {
+    width: 59.2rem;
+  }
+  .contact-area header div {
+    display: flex;
+    flex-direction: column;
+  }
+  .arrow-down-icon {
+    width: 5.8rem;
+  }
+  .star-background {
+    display: block;
+  }
 }
